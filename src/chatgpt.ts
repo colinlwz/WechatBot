@@ -80,9 +80,9 @@ export class ChatGPTPool {
           chatGpt: chatGpt,
           account: account,
         });
-      } catch {
+      } catch (err) {
         console.error(
-          `Try init account: ${account.email} failed, remove it from pool`
+          `Try init account: ${account.email} failed: ${err}, remove it from pool`
         );
       }
     }
