@@ -21,6 +21,8 @@ if (fs.existsSync("./config.yaml")) {
     openAIProxy: process.env.OPENAI_PROXY,
     clearanceToken: process.env.CF_CLEARANCE,
     userAgent: process.env.USER_AGENT,
+    apiKey: process.env.CHAT_API_KEY,
+    model: process.env.CHAT_MODEL,
   };
 }
 dotenv.config();
